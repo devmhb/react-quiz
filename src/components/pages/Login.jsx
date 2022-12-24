@@ -4,7 +4,7 @@ import Textinput from "../Textinput";
 import Illustration from "../Illustration";
 import Button from "../Button";
 import styles from "../../styles/Login.module.css";
-
+import { Link } from "react-router-dom";
 const Login = () => {
   return (
     <div className="container">
@@ -22,7 +22,7 @@ const Login = () => {
             <span>Submit Now</span>
           </Button>
           <div className="info">
-            Don't have an account? <a href="signup.html">Signup</a> instead.
+            Don't have an account? <Link to="/signup">Signup</Link> instead.
           </div>
         </Form>
       </div>
