@@ -7,20 +7,23 @@ import SignUp from "./components/pages/SignUp";
 import Login from "./components/pages/Login";
 import Quiz from "./components/pages/Quiz";
 import Result from "./components/pages/Result";
+import AuthProvider from "./components/context/AuthContext.jsx";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Layout>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/signup" element={<SignUp />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/quiz" element={<Quiz />} />
-            <Route path="/result" element={<Result />} />
-          </Routes>
-        </Layout>
+        <AuthProvider>
+          <Layout>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/signup" element={<SignUp />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/quiz" element={<Quiz />} />
+              <Route path="/result" element={<Result />} />
+            </Routes>
+          </Layout>
+        </AuthProvider>
       </Router>
     </div>
   );
