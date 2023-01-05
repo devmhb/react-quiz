@@ -12,6 +12,8 @@ const LoginForm = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const { login } = useAuth();
+  const { currentUser } = useAuth();
+  console.log(currentUser);
   const navigate = useNavigate();
 
   async function handleLogin(e) {

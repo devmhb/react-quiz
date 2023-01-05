@@ -4,37 +4,11 @@ import Video from "./Video";
 import { Link } from "react-router-dom";
 const Videos = () => {
   return (
-    <>
-      <div className={styles.videos}>
-        <Link to="/quiz">
-          <Video />
-        </Link>
-        <Link to="/quiz">
-          <Video />
-        </Link>
-        <Link to="/quiz">
-          <Video />
-        </Link>
-        <Link to="/quiz">
-          <Video />
-        </Link>
-        <Link to="/quiz">
-          <Video />
-        </Link>
-        <Link to="/quiz">
-          <Video />
-        </Link>
-        <Link to="/quiz">
-          <Video />
-        </Link>
-        <Link to="/quiz">
-          <Video />
-        </Link>
-        <Link to="/quiz">
-          <Video />
-        </Link>
-      </div>
-    </>
+    <div className={styles.videos}>
+      <Link to="/quiz">
+        <Video />
+      </Link>
+    </div>
   );
 };
 
